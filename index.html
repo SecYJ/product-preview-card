@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+
+        <title>Frontend Mentor | Product preview card component</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./dist/styles.css" />
+
+        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+        <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+    </head>
+    <body class="bg-cream text-dark-grayish-blue">
+        <main class="grid min-h-screen place-content-center px-4 py-7">
+            <div
+                class="flex max-w-[345px] flex-col overflow-hidden rounded-[10px] bg-white lg:max-w-[600px] lg:flex-row"
+            >
+                <picture>
+                    <source
+                        media="(min-width: 1440px)"
+                        srcset="./images/image-product-desktop.jpg"
+                    />
+                    <source
+                        media="(min-width: 375px)"
+                        srcset="./images/image-product-mobile.jpg"
+                    />
+                    <img
+                        src="./images/image-product-mobile.jpg"
+                        alt="perfume picture"
+                        class="h-full w-full object-cover"
+                    />
+                </picture>
+                <div class="p-6">
+                    <small
+                        class="lg:5 mb-3 text-[.75rem] uppercase leading-[1.21] tracking-[5px]"
+                        >perfume</small
+                    >
+                    <h2
+                        class="mb-4 font-fraunces text-[2rem] leading-none text-very-dark-blue lg:mb-6"
+                    >
+                        Gabrielle Essence Eau De Parfum
+                    </h2>
+                    <p class="mb-6 text-[14px] leading-[1.6] lg:mb-7">
+                        A floral, solar and voluptuous interpretation composed
+                        by Olivier Polge, Perfumer-Creator for the House of
+                        CHANEL.
+                    </p>
+                    <div class="mb-5 flex items-center gap-6 lg:mb-8">
+                        <strong
+                            class="text-[2rem] font-bold leading-none text-dark-cyan"
+                        >
+                            $149.99
+                        </strong>
+                        <span class="font-semibold line-through">$169.99</span>
+                    </div>
+                    <button
+                        type="button"
+                        class="flex w-full items-center justify-center gap-3 rounded-lg bg-dark-cyan py-4 font-bold text-white hover:bg-[#1a4032]"
+                    >
+                        <img src="./images/icon-cart.svg" alt="cart icon" />
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <footer
+            class="attribution fixed bottom-0 left-0 right-0 bg-dark-cyan py-4 text-center text-white lg:py-8"
+        >
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                class="underline"
+                >Frontend Mentor</a
+            >. Coded by <a href="#" class="underline">Sec</a>.
+        </footer>
+    </body>
+</html>
